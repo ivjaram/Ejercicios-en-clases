@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>etiqueta suma</p>
+    <input type="number" id="s1">
+    <input type="number" id="s2">
+    <input type="number" id="totals">
+    <input type="button"  value="Suma" onclick="suma()">
+    <script>
+        function suma(){
+            var sn1 = Number(document.getElementById('s1').value);
+            var sn2 = Number(document.getElementById('s2').value);
+             var totals = sn1+sn2;
+             document.getElementById('totals').value=totals;
+        }
+    </script>
+
+    <p>eitqueta restar</p>
+    <input type="number" id="r1">
+    <input type="number" id="r2">
+    <input type="number" id="totalr">
+    <input type="button" value="resta" onclick="restar()">
+    <script>
+        function restar(){
+            var rn1 = Number(document.getElementById('r1').value);
+            var rn2 = Number(document.getElementById('r2').value);
+            var totalr = (rn1-rn2);
+             document.getElementById('totalr').value=totalr;
+        }
+    </script>
+
+    <p>eitqueta multiplicar</p>
+    <input type="number" id="m1">
+    <input type="number" id="m2">
+    <input type="text" id="totalm">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <script>
+        function multiplicar(){
+            var m1 = document.getElementById('m1').value;
+            var m2 = document.getElementById('m2').value;
+            var total = m1*m2;
+             document.getElementById('totalm').value=total;
+        }
+    </script>
+
+    <p>eitqueta dividir</p>
+    <input type="number" id="d1">
+    <input type="number" id="d2">
+    <input type="text" id="totald">
+    <input type="button" value="dividir" onclick="dividir()">
+    <script>
+        function dividir(){
+            var d1 = document.getElementById('d1').value;
+            var d2 = document.getElementById('d2').value;
+            var total = d1/d2;
+             document.getElementById('totald').value=total;
+        }
+    </script>
+
+</body>
+</html>
